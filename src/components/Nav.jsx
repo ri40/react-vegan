@@ -2,10 +2,9 @@ import {
   Box, Flex, Text, IconButton, Stack, Collapse, Icon, Link, Popover, PopoverTrigger, PopoverContent, useColorModeValue, useBreakpointValue, useDisclosure, Image, } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, ChevronDownIcon, ChevronRightIcon, } from '@chakra-ui/icons';
 import { ColorModeSwitcher } from '../ColorModeSwitcher';
-import { Navigate, useNavigate } from 'react-router-dom';
 export default function Nav() {
   const { isOpen, onToggle } = useDisclosure();
-  
+
   return (
     <Box>
       <Flex
@@ -221,7 +220,7 @@ const MobileNavItem = ({ label, children, href }) => {
 const NAV_ITEMS = [
   {
     label: 'Home',
-    href: '',
+    href: '/',
   },
   {
     label: 'Recipe',

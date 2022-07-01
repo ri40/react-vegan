@@ -1,7 +1,7 @@
 import React from 'react';
 import Recipe from './Recipe';
 import SearchButton from '../components/SearchButton';
-import { Box, VStack, Text } from '@chakra-ui/react';
+import { Box, VStack, Text, SimpleGrid } from '@chakra-ui/react';
 const MainCourse = ({ recipes, getRecipe }) => {
   return (
     <VStack>
@@ -21,7 +21,9 @@ const MainCourse = ({ recipes, getRecipe }) => {
         }}
         searchBtn="Get Main Course Recipes"
       />
-      <Recipe recipes={recipes} />
+      <SimpleGrid columns={[1, 2, 3]} spacing={10}>
+        <Recipe recipes={recipes} />
+      </SimpleGrid>
     </VStack>
   );
 };

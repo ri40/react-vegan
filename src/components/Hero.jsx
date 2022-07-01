@@ -19,7 +19,7 @@ export default function Hero() {
         backgroundPosition={'center center'}>
     <VStack align="center">
       <Box mt={150}>
-        <Text fontSize="5xl" as='mark'>Go Vegan </Text>
+        <Text fontSize="5xl" as='mark'>Go Vegan 🌱</Text>
         <Container mt={30} mb={50}>
           There are many benefits to a joint design and development system. Not
           only does it bring benefits to the design team, but it also brings
