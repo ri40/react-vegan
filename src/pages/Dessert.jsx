@@ -1,19 +1,30 @@
 import React from 'react';
 import Recipe from './Recipe';
 import SearchButton from '../components/SearchButton';
-
+import { Box, VStack,Text  } from '@chakra-ui/react';
 const Dessert = ({ recipes, getRecipe }) => {
+
+	
 	return (
-		<div className="recipes">
-			<h1>Desserts</h1>
-			<SearchButton
-				onClick={() => {
-					getRecipe('dessert');
-				}}
-				searchBtn="Get Dessert Recipes"
-			/>
-			<Recipe recipes={recipes} />
-		</div>
+		<VStack >
+        <Box h="100px">
+          <Text
+            bgGradient="linear(to-l, #ca7928, #79ca28)"
+            bgClip="text"
+            fontSize="6xl"
+            fontWeight="extrabold"
+          >
+            Desserts
+          </Text>
+        </Box>
+        <SearchButton
+          onClick={() => {
+            getRecipe('dessert');
+          }}
+          searchBtn="Get Desserts Recipes"
+        />
+        <Recipe recipes={recipes} />
+    </VStack>
 	);
 };
 

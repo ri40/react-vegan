@@ -1,10 +1,19 @@
 import React from 'react';
-import { Text, VStack, Box } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 const SearchButton = ({ onClick, searchBtn }) => {
 	return (
-		<button className="search-button" onClick={onClick}>
-			{searchBtn}
-		</button>
+<Box
+        as="button"
+        p={4}
+        color="white"
+		onClick={onClick}
+        fontWeight="bold"
+        borderRadius="lg"
+        bgGradient="linear(to-r, teal.500, green.500)"
+        _hover={{ bgGradient: 'linear(to-r, red.500, yellow.500)', }}>
+		{/* <Link to={searchBtn}></Link> */}
+		{searchBtn}
+      </Box>
 	);
 };
 
